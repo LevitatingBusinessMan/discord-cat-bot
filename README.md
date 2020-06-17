@@ -1,5 +1,5 @@
 # discord-cat-bot
-To init the bot create a .env file. Then put your discord bot token and cat token there:
+To init the bot create a .env file. Then put your discord bot token and cat token there:  
 token="[discord token]"
 cat_api="[cat api token]"
 
