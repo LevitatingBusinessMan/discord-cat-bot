@@ -15,7 +15,7 @@ class MyClient(discord.Client):
 
     async def on_message(self, message):
         if "poes" in message.content:
-            data = requests.get('https://api.thecatapi.com/v1/images/search?breed_ids=beng&include_breeds=true?size=small', headers={"X-API-KEY": cat}).json()
+            data = requests.get('https://api.thecatapi.com/v1/images/search?size=small', headers={"X-API-KEY": cat}).json()
             await message.channel.send(data[0]["url"])
 client = MyClient()
 client.run(token)
