@@ -17,5 +17,7 @@ class MyClient(discord.Client):
         if "poes" in message.content:
             data = requests.get('https://api.thecatapi.com/v1/images/search?size=small', headers={"X-API-KEY": cat}).json()
             await message.channel.send(data[0]["url"])
+        elif "rick" in message.content:
+            await message.channel.send("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 client = MyClient()
 client.run(token)
